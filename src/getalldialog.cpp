@@ -73,7 +73,6 @@ getallDialog::getallDialog(QWidget *parent) :
         }
     }
 
-    // 当前窗口任务优先处理
     ui->tableView->setModel(model);  
     ui->tableView->show();
 }

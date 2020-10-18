@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     database.setDatabaseName("./qtusb.db");
 
     // 检查数据库是否开启
-    if (!database.open())
+    if(!database.open())
         qDebug() << "Error: Failed to connect database!\n" << database.lastError();
     else
         qDebug() << "Connect to database successfully!\n";

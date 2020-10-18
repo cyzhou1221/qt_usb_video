@@ -42,7 +42,6 @@ modifyDialog::~modifyDialog()
     delete ui;
 }
 
-
 void modifyDialog::on_pushButton_clicked()
 {
     // "查询"按钮
@@ -86,14 +85,12 @@ void modifyDialog::on_pushButton_clicked()
     }
 }
 
-
 void modifyDialog::on_tableView_clicked()
 {
     // 读取选中记录的行数，之后提取身份证号
     curRow = ui->tableView->currentIndex().row();
     curId = id[curRow];
 }
-
 
 void modifyDialog::on_pushButton_2_clicked()
 {
@@ -115,7 +112,6 @@ void modifyDialog::on_pushButton_2_clicked()
         model->removeRows(0, model->rowCount());
     }
 }
-
 
 void modifyDialog::on_pushButton_3_clicked()
 {
